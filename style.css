@@ -47,7 +47,7 @@ button:hover {
 }
 
 button:disabled{
-    background: #95a5a6;
+    background: #96B7EA;
     cursor: not-allowed;
 }
 #hasil {
@@ -59,6 +59,6 @@ button:disabled{
 .ringkasan {
     margin-top: 10px;
     padding-top: 10px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #96B7EA;
     font-weight: bold;
 }
