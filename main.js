@@ -41,8 +41,8 @@ function tampilkan() {
 
 // fungsi untuk menghapus barang terakhir dari keranjang
 function hapus() {
-   dataBarang.pop()
-   tampilkan()
+  dataBarang.pop()
+  tampilkan()
 }
 
 // fungsi untuk mereset keranjang
@@ -63,7 +63,7 @@ function edit() {
   if (index >= 0 && index < dataBarang.length) {
     // update harga barang di array dataBarang
     dataBarang[index] = harga
-  }else {
+  } else {
     // jika nomor barang tidak valid, tampilkan alert
     alert("Nomor barang tidak valid")
   }
@@ -73,4 +73,24 @@ function edit() {
   // kosongkan infut nomor dan harga edit setelah diedit
   document.getElementById("nomor").value = ""
   document.getElementById("hargaedit").value = ""
+}
+
+// fugsi untuk menghapus barang berdasarkan nomor barang
+function hapusNomor() {
+  // ubah nomor barang menjadi index array dengan mengurangi 1
+  let index = Number(document.getElementById("nomorHapus").value) - 1
+  
+  // periksa apakah index valid
+  if (index >= 0 && index < dataBarang.length) {
+    // hapus barang dari array dataBarang menggunakan splice
+    dataBarang.splice(index, 1)
+  } else {
+    // jika nomor barang tidak valid, tampilkan alert
+    alert("Nomor barang tidak valid")
+  }
+  
+  tampilkan()
+  
+  // kosongkan input nomor hapus setelah dihapus
+  document.getElementById("nomorHapus").value = ""
 }
