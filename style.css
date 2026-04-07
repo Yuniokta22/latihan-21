@@ -27,7 +27,7 @@ button {
     margin-top: 10px;
     border-radius: 6px;
     border: none;
-    background: #64BC6A;
+    background: #6FABD3;
     color: white;
     font-size: 15px;
     cursor: pointer;
@@ -43,7 +43,7 @@ input {
 }
 
 button:hover {
-    background: #64BC6A;
+    background: #2980b9;
 }
 
 button:disabled{
