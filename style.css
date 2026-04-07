@@ -27,7 +27,7 @@ button {
     margin-top: 10px;
     border-radius: 6px;
     border: none;
-    background: #3498db;
+    background: #64BC6A;
     color: white;
     font-size: 15px;
     cursor: pointer;
@@ -61,4 +61,8 @@ button:disabled{
     padding-top: 10px;
     border-top: 1px solid #96B7EA;
     font-weight: bold;
+}
+
+.hapus {
+    background: #e74c3c;
 }
